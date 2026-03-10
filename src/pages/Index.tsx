@@ -7,15 +7,16 @@ import IntegrationsSection from "@/components/IntegrationsSection";
 import FeaturedInSection from "@/components/FeaturedInSection";
 import NewsletterSection from "@/components/NewsletterSection";
 import SponsorsSection from "@/components/SponsorsSection";
+import TopBar from "@/components/TopBar";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const Index = () => {
+  const { t } = useLanguage();
   return (
     <div className="relative min-h-screen overflow-x-hidden">
-      {/* Background layers */}
       <div className="stars-bg" />
       <div className="nebula-bg" />
-
-      {/* Content */}
+      <TopBar />
       <div className="relative z-10">
         <HeroSection />
         <AnnouncementBanner />
@@ -26,10 +27,8 @@ const Index = () => {
         <FeaturedInSection />
         <NewsletterSection />
         <SponsorsSection />
-
-        {/* Footer */}
         <footer className="py-8 text-center text-xs text-muted-foreground border-t border-border">
-          <p>© 2024 OpenClaw. Open source and proud of it. 🦞</p>
+          <p>{t("footer.text")}</p>
         </footer>
       </div>
     </div>
