@@ -5,7 +5,9 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
+  /* Dark mode (default) */
+  :root,
+  .dark {
     --background: 220 20% 7%;
     --foreground: 210 20% 90%;
     --card: 220 20% 10%;
@@ -34,15 +36,37 @@
     --claw-card-border: 220 15% 20%;
     --claw-green: 145 70% 45%;
     --claw-yellow: 45 100% 55%;
+  }
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+  /* Light mode */
+  .light {
+    --background: 0 0% 98%;
+    --foreground: 220 20% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 15%;
+    --primary: 0 80% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 15% 93%;
+    --secondary-foreground: 220 20% 15%;
+    --muted: 220 10% 93%;
+    --muted-foreground: 215 10% 45%;
+    --accent: 165 70% 38%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 0 80% 50%;
+
+    --claw-red: 0 80% 50%;
+    --claw-glow: 0 100% 60%;
+    --claw-dark: 220 15% 96%;
+    --claw-card-bg: 0 0% 100%;
+    --claw-card-border: 220 15% 88%;
+    --claw-green: 145 70% 38%;
+    --claw-yellow: 45 100% 50%;
   }
 }
 
@@ -56,13 +80,18 @@
   }
 }
 
-/* Stars background */
+/* Stars background - dark mode only */
 .stars-bg {
   position: fixed;
   inset: 0;
   z-index: 0;
   overflow: hidden;
   pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.light .stars-bg {
+  opacity: 0;
 }
 
 .stars-bg::before,
@@ -112,10 +141,18 @@
   inset: 0;
   z-index: 0;
   pointer-events: none;
+  transition: opacity 0.5s ease;
   background: 
     radial-gradient(ellipse 800px 400px at 50% 0%, hsl(0 80% 30% / 0.15), transparent),
     radial-gradient(ellipse 600px 300px at 80% 50%, hsl(260 60% 30% / 0.08), transparent),
     radial-gradient(ellipse 500px 250px at 20% 80%, hsl(200 60% 20% / 0.06), transparent);
+}
+
+.light .nebula-bg {
+  background: 
+    radial-gradient(ellipse 800px 400px at 50% 0%, hsl(0 80% 70% / 0.06), transparent),
+    radial-gradient(ellipse 600px 300px at 80% 50%, hsl(260 60% 70% / 0.04), transparent),
+    radial-gradient(ellipse 500px 250px at 20% 80%, hsl(200 60% 70% / 0.03), transparent);
 }
 
 @keyframes twinkle {
@@ -150,6 +187,7 @@
   border-radius: var(--radius);
   overflow: hidden;
   font-family: 'JetBrains Mono', monospace;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .terminal-titlebar {
@@ -164,6 +202,11 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.terminal-dot:hover {
+  transform: scale(1.3);
 }
 
 .terminal-dot-red { background: hsl(0 80% 55%); }
@@ -176,17 +219,9 @@
   line-height: 1.8;
 }
 
-.terminal-comment {
-  color: hsl(var(--muted-foreground));
-}
-
-.terminal-prompt {
-  color: hsl(var(--accent));
-}
-
-.terminal-command {
-  color: hsl(var(--foreground));
-}
+.terminal-comment { color: hsl(var(--muted-foreground)); }
+.terminal-prompt { color: hsl(var(--accent)); }
+.terminal-command { color: hsl(var(--foreground)); transition: color 0.2s ease; }
 
 /* Section title claw accent */
 .claw-accent {
@@ -200,12 +235,12 @@
   border: 1px solid hsl(var(--claw-card-border));
   border-radius: var(--radius);
   padding: 1.5rem;
-  transition: border-color 0.3s ease, transform 0.2s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature-card:hover {
   border-color: hsl(var(--primary) / 0.5);
-  transform: translateY(-2px);
+  box-shadow: 0 8px 25px -5px hsl(var(--primary) / 0.1);
 }
 
 /* Integration badge */
@@ -216,11 +251,12 @@
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
   color: hsl(var(--foreground));
-  transition: border-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .integration-badge:hover {
   border-color: hsl(var(--primary) / 0.5);
+  box-shadow: 0 0 15px hsl(var(--primary) / 0.1);
 }
 
 /* Testimonial card */
@@ -232,11 +268,12 @@
   min-width: 300px;
   max-width: 350px;
   flex-shrink: 0;
-  transition: border-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .testimonial-card:hover {
   border-color: hsl(var(--primary) / 0.4);
+  box-shadow: 0 4px 20px hsl(var(--primary) / 0.08);
 }
 
 /* Announcement banner */
@@ -248,11 +285,12 @@
   border: 1px solid hsl(var(--claw-card-border));
   border-radius: 9999px;
   padding: 0.5rem 1.25rem;
-  transition: border-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .announcement-banner:hover {
   border-color: hsl(var(--primary) / 0.5);
+  box-shadow: 0 0 20px hsl(var(--primary) / 0.1);
 }
 
 .announcement-badge {
@@ -274,6 +312,7 @@
   font-weight: 500;
   font-size: 0.8125rem;
   font-family: 'JetBrains Mono', monospace;
+  transition: all 0.2s ease;
 }
 
 .tab-inactive {
@@ -295,11 +334,12 @@
   border: 1px solid hsl(var(--claw-card-border));
   border-radius: var(--radius);
   padding: 2rem;
-  transition: border-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .press-card:hover {
   border-color: hsl(var(--primary) / 0.4);
+  box-shadow: 0 8px 25px -5px hsl(var(--primary) / 0.1);
 }
 
 /* Newsletter input */
@@ -310,22 +350,52 @@
   padding: 0.75rem 1rem;
   color: hsl(var(--foreground));
   outline: none;
-  transition: border-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .newsletter-input:focus {
   border-color: hsl(var(--primary) / 0.5);
+  box-shadow: 0 0 15px hsl(var(--primary) / 0.1);
 }
 
 /* Sponsor logo */
 .sponsor-logo {
-  opacity: 0.5;
-  transition: opacity 0.3s ease;
-  filter: grayscale(100%) brightness(2);
+  color: hsl(var(--foreground));
+  transition: all 0.3s ease;
+  filter: grayscale(100%);
 }
 
 .sponsor-logo:hover {
-  opacity: 1;
+  filter: grayscale(0%);
+}
+
+/* Top bar button */
+.topbar-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 9999px;
+  background: hsl(var(--claw-card-bg));
+  border: 1px solid hsl(var(--claw-card-border));
+  color: hsl(var(--foreground));
+  font-size: 0.8125rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.topbar-btn:hover {
+  border-color: hsl(var(--primary) / 0.5);
+  box-shadow: 0 0 15px hsl(var(--primary) / 0.1);
+}
+
+/* Hover arrow animation */
+.hover-arrow {
+  transition: letter-spacing 0.2s ease;
+}
+.hover-arrow:hover {
+  letter-spacing: 0.02em;
 }
 
 /* Scrollbar */
@@ -338,4 +408,9 @@
 ::-webkit-scrollbar-thumb {
   background: hsl(var(--claw-card-border));
   border-radius: 4px;
+}
+
+/* Light mode scrollbar */
+.light ::-webkit-scrollbar-thumb {
+  background: hsl(220 15% 80%);
 }
