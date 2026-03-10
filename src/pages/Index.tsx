@@ -1,11 +1,36 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/HeroSection";
+import AnnouncementBanner from "@/components/AnnouncementBanner";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import QuickStartSection from "@/components/QuickStartSection";
+import FeaturesSection from "@/components/FeaturesSection";
+import IntegrationsSection from "@/components/IntegrationsSection";
+import FeaturedInSection from "@/components/FeaturedInSection";
+import NewsletterSection from "@/components/NewsletterSection";
+import SponsorsSection from "@/components/SponsorsSection";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="relative min-h-screen overflow-x-hidden">
+      {/* Background layers */}
+      <div className="stars-bg" />
+      <div className="nebula-bg" />
+
+      {/* Content */}
+      <div className="relative z-10">
+        <HeroSection />
+        <AnnouncementBanner />
+        <TestimonialsSection />
+        <QuickStartSection />
+        <FeaturesSection />
+        <IntegrationsSection />
+        <FeaturedInSection />
+        <NewsletterSection />
+        <SponsorsSection />
+
+        {/* Footer */}
+        <footer className="py-8 text-center text-xs text-muted-foreground border-t border-border">
+          <p>© 2024 OpenClaw. Open source and proud of it. 🦞</p>
+        </footer>
       </div>
     </div>
   );
