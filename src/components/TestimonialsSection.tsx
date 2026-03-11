@@ -73,14 +73,6 @@ const TestimonialsSection = () => {
           <h2 className="text-2xl md:text-3xl font-bold">
             <span className="claw-accent">⟩</span> {t("testimonials.title")}
           </h2>
-          <a
-            href="https://openclaw.ai/shoutouts"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary text-sm font-medium hover:underline hover-arrow"
-          >
-            {t("testimonials.viewAll")}
-          </a>
         </div>
       </div>
       <div className="space-y-4">
