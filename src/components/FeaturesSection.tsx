@@ -42,12 +42,9 @@ const FeaturesSection = () => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {features.map((f, i) => (
-          <motion.a
+          <motion.div
             key={f.titleKey}
-            href={f.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="feature-card block no-underline group"
+            className="feature-card block group"
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
