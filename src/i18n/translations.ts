@@ -53,6 +53,11 @@ export const translations: Record<Locale, Record<string, string>> = {
     "newsletter.desc": "Get updates on new features, integrations, and lobster wisdom. No spam, unsubscribe anytime.",
     "newsletter.placeholder": "your@email.com",
     "newsletter.subscribe": "Subscribe",
+    "newsletter.errorEmpty": "Please enter your email address.",
+    "newsletter.errorInvalid": "Please enter a valid email address.",
+    "newsletter.success": "You're in! 🎉",
+    "newsletter.successDesc": "Check your inbox for a confirmation email.",
+    "newsletter.another": "Subscribe another email",
 
     // Sponsors
     "sponsors.title": "Sponsors",
