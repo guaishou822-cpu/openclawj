@@ -170,6 +170,11 @@ export const translations: Record<Locale, Record<string, string>> = {
     "newsletter.desc": "新機能、連携、ロブスターの知恵をお届け。スパムなし、いつでも解除可能。",
     "newsletter.placeholder": "メールアドレス",
     "newsletter.subscribe": "登録",
+    "newsletter.errorEmpty": "メールアドレスを入力してください。",
+    "newsletter.errorInvalid": "有効なメールアドレスを入力してください。",
+    "newsletter.success": "登録完了！🎉",
+    "newsletter.successDesc": "確認メールをご確認ください。",
+    "newsletter.another": "他のメールを登録",
 
     "sponsors.title": "スポンサー",
 
