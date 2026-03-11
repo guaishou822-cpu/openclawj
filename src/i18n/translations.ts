@@ -15,15 +15,11 @@ export const translations: Record<Locale, Record<string, string>> = {
     "testimonials.title": "What People Say",
     "testimonials.viewAll": "View all →",
 
-    // Quick Start
-    "quickstart.title": "Quick Start",
-    "quickstart.os": "macOS/Linux",
-    "quickstart.change": "change",
-    "quickstart.companion": "Companion App (Beta)",
-    "quickstart.companionDesc": "Menubar access to your lobster. Works great alongside the CLI.",
-    "quickstart.download": "Download for macOS",
-    "quickstart.requires": "Requires macOS 15+ · Universal Binary",
-    "quickstart.footer": "Works on macOS, Windows & Linux. The one-liner installs Node.js and everything else for you.",
+    // Download
+    "download.title": "Download OpenClaw",
+    "download.desc": "Get the desktop app for your platform. Free, open source, always.",
+    "download.downloadFor": "Download for",
+    "download.requirements": "macOS 13+ · Windows 10+ · Also available on Linux via CLI",
 
     // Features
     "features.title": "What It Does",
@@ -53,6 +49,11 @@ export const translations: Record<Locale, Record<string, string>> = {
     "newsletter.desc": "Get updates on new features, integrations, and lobster wisdom. No spam, unsubscribe anytime.",
     "newsletter.placeholder": "your@email.com",
     "newsletter.subscribe": "Subscribe",
+    "newsletter.errorEmpty": "Please enter your email address.",
+    "newsletter.errorInvalid": "Please enter a valid email address.",
+    "newsletter.success": "You're in! 🎉",
+    "newsletter.successDesc": "Check your inbox for a confirmation email.",
+    "newsletter.another": "Subscribe another email",
 
     // Sponsors
     "sponsors.title": "Sponsors",
@@ -75,14 +76,10 @@ export const translations: Record<Locale, Record<string, string>> = {
     "testimonials.title": "用户评价",
     "testimonials.viewAll": "查看全部 →",
 
-    "quickstart.title": "快速开始",
-    "quickstart.os": "macOS/Linux",
-    "quickstart.change": "切换",
-    "quickstart.companion": "桌面应用 (测试版)",
-    "quickstart.companionDesc": "菜单栏直达你的龙虾助手，与 CLI 完美配合。",
-    "quickstart.download": "下载 macOS 版",
-    "quickstart.requires": "需要 macOS 15+ · 通用二进制",
-    "quickstart.footer": "支持 macOS、Windows 和 Linux。一键安装命令会自动安装 Node.js 及所有依赖。",
+    "download.title": "下载 OpenClaw",
+    "download.desc": "获取适用于你平台的桌面应用。免费、开源、始终如此。",
+    "download.downloadFor": "下载",
+    "download.requirements": "macOS 13+ · Windows 10+ · Linux 可通过 CLI 安装",
 
     "features.title": "功能介绍",
     "features.runs.title": "运行在你的设备上",
@@ -108,6 +105,11 @@ export const translations: Record<Locale, Record<string, string>> = {
     "newsletter.desc": "获取新功能、集成和龙虾智慧的更新。无垃圾邮件，随时退订。",
     "newsletter.placeholder": "你的邮箱",
     "newsletter.subscribe": "订阅",
+    "newsletter.errorEmpty": "请输入邮箱地址。",
+    "newsletter.errorInvalid": "请输入有效的邮箱地址。",
+    "newsletter.success": "订阅成功！🎉",
+    "newsletter.successDesc": "请查看收件箱确认订阅。",
+    "newsletter.another": "订阅其他邮箱",
 
     "sponsors.title": "赞助商",
 
@@ -127,14 +129,10 @@ export const translations: Record<Locale, Record<string, string>> = {
     "testimonials.title": "ユーザーの声",
     "testimonials.viewAll": "すべて見る →",
 
-    "quickstart.title": "クイックスタート",
-    "quickstart.os": "macOS/Linux",
-    "quickstart.change": "変更",
-    "quickstart.companion": "コンパニオンアプリ（ベータ）",
-    "quickstart.companionDesc": "メニューバーからロブスターにアクセス。CLIと完璧に連携。",
-    "quickstart.download": "macOS版をダウンロード",
-    "quickstart.requires": "macOS 15以上 · ユニバーサルバイナリ",
-    "quickstart.footer": "macOS、Windows、Linuxに対応。ワンライナーでNode.jsと必要なものをすべてインストール。",
+    "download.title": "OpenClaw をダウンロード",
+    "download.desc": "あなたのプラットフォーム向けデスクトップアプリ。無料、オープンソース。",
+    "download.downloadFor": "ダウンロード",
+    "download.requirements": "macOS 13+ · Windows 10+ · Linux は CLI で利用可能",
 
     "features.title": "機能紹介",
     "features.runs.title": "あなたのマシンで動作",
@@ -160,6 +158,11 @@ export const translations: Record<Locale, Record<string, string>> = {
     "newsletter.desc": "新機能、連携、ロブスターの知恵をお届け。スパムなし、いつでも解除可能。",
     "newsletter.placeholder": "メールアドレス",
     "newsletter.subscribe": "登録",
+    "newsletter.errorEmpty": "メールアドレスを入力してください。",
+    "newsletter.errorInvalid": "有効なメールアドレスを入力してください。",
+    "newsletter.success": "登録完了！🎉",
+    "newsletter.successDesc": "確認メールをご確認ください。",
+    "newsletter.another": "他のメールを登録",
 
     "sponsors.title": "スポンサー",
 

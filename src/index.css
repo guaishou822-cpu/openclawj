@@ -358,7 +358,26 @@
   box-shadow: 0 0 15px hsl(var(--primary) / 0.1);
 }
 
-/* Sponsor logo */
+/* Download button */
+.download-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid hsl(var(--claw-card-border));
+  background: hsl(var(--claw-card-bg));
+  color: hsl(var(--foreground));
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  border-color: hsl(var(--primary) / 0.5);
+  background: hsl(var(--primary) / 0.05);
+}
+
+
 .sponsor-logo {
   color: hsl(var(--foreground));
   transition: all 0.3s ease;

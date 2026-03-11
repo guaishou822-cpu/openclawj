@@ -1,7 +1,7 @@
 import HeroSection from "@/components/HeroSection";
-import AnnouncementBanner from "@/components/AnnouncementBanner";
+import DownloadSection from "@/components/DownloadSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import QuickStartSection from "@/components/QuickStartSection";
+
 import FeaturesSection from "@/components/FeaturesSection";
 import IntegrationsSection from "@/components/IntegrationsSection";
 import FeaturedInSection from "@/components/FeaturedInSection";
@@ -19,9 +19,8 @@ const Index = () => {
       <TopBar />
       <div className="relative z-10">
         <HeroSection />
-        <AnnouncementBanner />
         <TestimonialsSection />
-        <QuickStartSection />
+        <DownloadSection />
         <FeaturesSection />
         <IntegrationsSection />
         <FeaturedInSection />
