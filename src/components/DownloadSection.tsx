@@ -49,7 +49,7 @@ const DownloadSection = () => {
         </motion.a>
       </div>
 
-      <p className="text-xs text-muted-foreground mt-6">{t("download.requirements")}</p>
+      
     </motion.section>
   );
 };
