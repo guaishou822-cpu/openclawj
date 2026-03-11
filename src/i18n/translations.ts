@@ -15,15 +15,11 @@ export const translations: Record<Locale, Record<string, string>> = {
     "testimonials.title": "What People Say",
     "testimonials.viewAll": "View all →",
 
-    // Quick Start
-    "quickstart.title": "Quick Start",
-    "quickstart.os": "macOS/Linux",
-    "quickstart.change": "change",
-    "quickstart.companion": "Companion App (Beta)",
-    "quickstart.companionDesc": "Menubar access to your lobster. Works great alongside the CLI.",
-    "quickstart.download": "Download for macOS",
-    "quickstart.requires": "Requires macOS 15+ · Universal Binary",
-    "quickstart.footer": "Works on macOS, Windows & Linux. The one-liner installs Node.js and everything else for you.",
+    // Download
+    "download.title": "Download OpenClaw",
+    "download.desc": "Get the desktop app for your platform. Free, open source, always.",
+    "download.downloadFor": "Download for",
+    "download.requirements": "macOS 13+ · Windows 10+ · Also available on Linux via CLI",
 
     // Features
     "features.title": "What It Does",
