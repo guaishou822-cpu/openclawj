@@ -1,5 +1,5 @@
 import HeroSection from "@/components/HeroSection";
-import AnnouncementBanner from "@/components/AnnouncementBanner";
+import DownloadSection from "@/components/DownloadSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import QuickStartSection from "@/components/QuickStartSection";
 import FeaturesSection from "@/components/FeaturesSection";
