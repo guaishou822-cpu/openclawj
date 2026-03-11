@@ -39,7 +39,7 @@ const TestimonialCard = ({ t: testimonial }: { t: Testimonial }) => (
       <p className="text-sm text-foreground leading-relaxed line-clamp-4">"{testimonial.quote}"</p>
     </div>
     <p className="text-sm text-primary font-medium group-hover:translate-x-1 transition-transform duration-300">@{testimonial.handle}</p>
-  </a>
+  </div>
 );
 
 const MarqueeRow = ({ items, reverse = false }: { items: Testimonial[]; reverse?: boolean }) => {

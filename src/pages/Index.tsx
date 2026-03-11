@@ -28,7 +28,7 @@ const Index = () => {
         <NewsletterSection />
         <SponsorsSection />
         <footer className="py-8 text-center text-xs text-muted-foreground border-t border-border">
-          <p>{t("footer.text")}</p>
+          <p>© 2026 OpenClaw. Open source under MIT License.</p>
         </footer>
       </div>
     </div>

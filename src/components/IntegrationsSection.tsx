@@ -35,11 +35,6 @@ const IntegrationsSection = () => {
           </motion.span>
         ))}
       </div>
-      <div className="flex justify-center gap-4 text-sm">
-        <a href="#" className="text-primary hover:underline hover-arrow">{t("integrations.viewAll")}</a>
-        <span className="text-muted-foreground">·</span>
-        <a href="#" className="text-primary hover:underline hover-arrow">{t("integrations.showcase")}</a>
-      </div>
     </motion.section>
   );
 };

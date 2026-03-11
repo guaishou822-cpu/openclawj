@@ -62,7 +62,7 @@ const FeaturesSection = () => {
               {t(f.titleKey)}
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed">{t(f.descKey)}</p>
-          </motion.a>
+          </motion.div>
         ))}
       </div>
     </motion.section>
