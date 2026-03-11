@@ -113,6 +113,11 @@ export const translations: Record<Locale, Record<string, string>> = {
     "newsletter.desc": "获取新功能、集成和龙虾智慧的更新。无垃圾邮件，随时退订。",
     "newsletter.placeholder": "你的邮箱",
     "newsletter.subscribe": "订阅",
+    "newsletter.errorEmpty": "请输入邮箱地址。",
+    "newsletter.errorInvalid": "请输入有效的邮箱地址。",
+    "newsletter.success": "订阅成功！🎉",
+    "newsletter.successDesc": "请查看收件箱确认订阅。",
+    "newsletter.another": "订阅其他邮箱",
 
     "sponsors.title": "赞助商",
 
