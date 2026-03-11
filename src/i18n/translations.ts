@@ -111,6 +111,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "newsletter.success": "订阅成功！🎉",
     "newsletter.successDesc": "请查看收件箱确认订阅。",
     "newsletter.another": "订阅其他邮箱",
+    "newsletter.successToast": "订阅成功",
 
     "sponsors.title": "赞助商",
 
