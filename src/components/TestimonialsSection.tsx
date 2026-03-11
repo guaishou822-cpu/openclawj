@@ -26,11 +26,8 @@ const row2: Testimonial[] = [
 ];
 
 const TestimonialCard = ({ t: testimonial }: { t: Testimonial }) => (
-  <a
-    href={testimonial.url}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="testimonial-card block no-underline group"
+  <div
+    className="testimonial-card block group"
   >
     <div className="flex items-start gap-3 mb-3">
       <img
