@@ -6,13 +6,13 @@ const pressItems = [
     outlet: "MacStories",
     quote: "OpenClaw Showed Me What the Future of Personal AI Assistants Looks Like",
     author: "Federico Viticci",
-    url: "#",
+    url: "https://www.macstories.net/stories/clawdbot-showed-me-what-the-future-of-personal-ai-assistants-looks-like/",
   },
   {
     outlet: "StarryHope",
     quote: "The Lobster Takeover: Why Developers Are Buying Mac Minis to Run Their Own AI Agents",
     author: "Jim Mendenhall",
-    url: "#",
+    url: "https://www.starryhope.com/minipcs/clawdbot-mac-mini-ai-agent-trend/",
   },
 ];
 

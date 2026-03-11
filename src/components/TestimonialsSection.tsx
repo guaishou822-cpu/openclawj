@@ -26,11 +26,8 @@ const row2: Testimonial[] = [
 ];
 
 const TestimonialCard = ({ t: testimonial }: { t: Testimonial }) => (
-  <a
-    href={testimonial.url}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="testimonial-card block no-underline group"
+  <div
+    className="testimonial-card block group"
   >
     <div className="flex items-start gap-3 mb-3">
       <img
@@ -42,7 +39,7 @@ const TestimonialCard = ({ t: testimonial }: { t: Testimonial }) => (
       <p className="text-sm text-foreground leading-relaxed line-clamp-4">"{testimonial.quote}"</p>
     </div>
     <p className="text-sm text-primary font-medium group-hover:translate-x-1 transition-transform duration-300">@{testimonial.handle}</p>
-  </a>
+  </div>
 );
 
 const MarqueeRow = ({ items, reverse = false }: { items: Testimonial[]; reverse?: boolean }) => {
@@ -51,7 +48,7 @@ const MarqueeRow = ({ items, reverse = false }: { items: Testimonial[]; reverse?
     <div className="overflow-hidden">
       <div
         className={`marquee-track ${reverse ? "marquee-track-reverse" : ""}`}
-        style={{ "--duration": `${items.length * 12}s` } as React.CSSProperties}
+        style={{ "--duration": `${items.length * 6}s` } as React.CSSProperties}
       >
         {doubled.map((testimonial, i) => (
           <TestimonialCard key={`${testimonial.handle}-${i}`} t={testimonial} />
@@ -76,14 +73,6 @@ const TestimonialsSection = () => {
           <h2 className="text-2xl md:text-3xl font-bold">
             <span className="claw-accent">⟩</span> {t("testimonials.title")}
           </h2>
-          <a
-            href="https://openclaw.ai/shoutouts"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary text-sm font-medium hover:underline hover-arrow"
-          >
-            {t("testimonials.viewAll")}
-          </a>
         </div>
       </div>
       <div className="space-y-4">

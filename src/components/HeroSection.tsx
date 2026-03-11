@@ -30,7 +30,7 @@ const HeroSection = () => {
         style={{ y }}
       />
       <motion.h1
-        className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-4"
+        className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-4 bg-gradient-to-b from-[hsl(0,80%,70%)] to-[hsl(0,80%,50%)] bg-clip-text text-transparent"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.15 }}
