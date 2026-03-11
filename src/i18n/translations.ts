@@ -54,6 +54,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "newsletter.success": "You're in! 🎉",
     "newsletter.successDesc": "Check your inbox for a confirmation email.",
     "newsletter.another": "Subscribe another email",
+    "newsletter.successToast": "Subscribed successfully",
 
     // Sponsors
     "sponsors.title": "Sponsors",
