@@ -51,7 +51,7 @@ const MarqueeRow = ({ items, reverse = false }: { items: Testimonial[]; reverse?
     <div className="overflow-hidden">
       <div
         className={`marquee-track ${reverse ? "marquee-track-reverse" : ""}`}
-        style={{ "--duration": `${items.length * 12}s` } as React.CSSProperties}
+        style={{ "--duration": `${items.length * 6}s` } as React.CSSProperties}
       >
         {doubled.map((testimonial, i) => (
           <TestimonialCard key={`${testimonial.handle}-${i}`} t={testimonial} />
