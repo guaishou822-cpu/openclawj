@@ -54,6 +54,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "newsletter.success": "You're in! 🎉",
     "newsletter.successDesc": "Check your inbox for a confirmation email.",
     "newsletter.another": "Subscribe another email",
+    "newsletter.successToast": "Subscribed successfully",
 
     // Sponsors
     "sponsors.title": "Sponsors",
@@ -110,6 +111,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "newsletter.success": "订阅成功！🎉",
     "newsletter.successDesc": "请查看收件箱确认订阅。",
     "newsletter.another": "订阅其他邮箱",
+    "newsletter.successToast": "订阅成功",
 
     "sponsors.title": "赞助商",
 
@@ -163,6 +165,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "newsletter.success": "登録完了！🎉",
     "newsletter.successDesc": "確認メールをご確認ください。",
     "newsletter.another": "他のメールを登録",
+    "newsletter.successToast": "登録完了",
 
     "sponsors.title": "スポンサー",
 

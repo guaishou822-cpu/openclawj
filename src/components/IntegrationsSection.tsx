@@ -11,7 +11,7 @@ const IntegrationsSection = () => {
   const { t } = useLanguage();
   return (
     <motion.section
-      className="py-12 max-w-6xl mx-auto px-4"
+      className="py-12 max-w-4xl mx-auto px-4 text-center"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}

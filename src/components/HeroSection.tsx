@@ -22,7 +22,7 @@ const HeroSection = () => {
       <motion.img
         src={mascotImg}
         alt="OpenClaw mascot"
-        className="w-24 h-24 md:w-32 md:h-32 mb-6 drop-shadow-[0_0_25px_hsl(var(--claw-glow)/0.4)]"
+        className="w-auto h-24 md:h-32 mb-6 object-contain drop-shadow-[0_0_25px_hsl(var(--claw-glow)/0.4)]"
         initial={{ scale: 0.5, opacity: 0, rotate: -10 }}
         animate={{ scale: 1, opacity: 1, rotate: 0 }}
         transition={{ duration: 0.7, ease: "easeOut", type: "spring", stiffness: 120 }}

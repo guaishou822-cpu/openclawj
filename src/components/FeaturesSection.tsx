@@ -31,13 +31,13 @@ const FeaturesSection = () => {
   const { t } = useLanguage();
   return (
     <motion.section
-      className="py-12 max-w-6xl mx-auto px-4"
+      className="py-12 max-w-4xl mx-auto px-4"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5 }}
     >
-      <h2 className="text-2xl md:text-3xl font-bold mb-8">
+      <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
         <span className="claw-accent">⟩</span> {t("features.title")}
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

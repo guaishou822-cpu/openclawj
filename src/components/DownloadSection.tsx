@@ -15,7 +15,7 @@ const DownloadSection = () => {
       <h2 className="text-2xl md:text-3xl font-bold mb-3">
         <span className="claw-accent">⟩</span> {t("download.title")}
       </h2>
-      <p className="text-sm text-muted-foreground mb-8">{t("download.desc")}</p>
+      
 
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <motion.a
@@ -49,7 +49,7 @@ const DownloadSection = () => {
         </motion.a>
       </div>
 
-      <p className="text-xs text-muted-foreground mt-6">{t("download.requirements")}</p>
+      
     </motion.section>
   );
 };
