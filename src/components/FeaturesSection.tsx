@@ -31,7 +31,7 @@ const FeaturesSection = () => {
   const { t } = useLanguage();
   return (
     <motion.section
-      className="py-12 max-w-6xl mx-auto px-4"
+      className="py-12 max-w-4xl mx-auto px-4"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, margin: "-50px" }}
