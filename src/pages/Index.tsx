@@ -1,7 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import DownloadSection from "@/components/DownloadSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import QuickStartSection from "@/components/QuickStartSection";
+
 import FeaturesSection from "@/components/FeaturesSection";
 import IntegrationsSection from "@/components/IntegrationsSection";
 import FeaturedInSection from "@/components/FeaturedInSection";
