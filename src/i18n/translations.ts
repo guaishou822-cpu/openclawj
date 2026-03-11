@@ -76,14 +76,10 @@ export const translations: Record<Locale, Record<string, string>> = {
     "testimonials.title": "用户评价",
     "testimonials.viewAll": "查看全部 →",
 
-    "quickstart.title": "快速开始",
-    "quickstart.os": "macOS/Linux",
-    "quickstart.change": "切换",
-    "quickstart.companion": "桌面应用 (测试版)",
-    "quickstart.companionDesc": "菜单栏直达你的龙虾助手，与 CLI 完美配合。",
-    "quickstart.download": "下载 macOS 版",
-    "quickstart.requires": "需要 macOS 15+ · 通用二进制",
-    "quickstart.footer": "支持 macOS、Windows 和 Linux。一键安装命令会自动安装 Node.js 及所有依赖。",
+    "download.title": "下载 OpenClaw",
+    "download.desc": "获取适用于你平台的桌面应用。免费、开源、始终如此。",
+    "download.downloadFor": "下载",
+    "download.requirements": "macOS 13+ · Windows 10+ · Linux 可通过 CLI 安装",
 
     "features.title": "功能介绍",
     "features.runs.title": "运行在你的设备上",
