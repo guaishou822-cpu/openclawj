@@ -129,14 +129,10 @@ export const translations: Record<Locale, Record<string, string>> = {
     "testimonials.title": "ユーザーの声",
     "testimonials.viewAll": "すべて見る →",
 
-    "quickstart.title": "クイックスタート",
-    "quickstart.os": "macOS/Linux",
-    "quickstart.change": "変更",
-    "quickstart.companion": "コンパニオンアプリ（ベータ）",
-    "quickstart.companionDesc": "メニューバーからロブスターにアクセス。CLIと完璧に連携。",
-    "quickstart.download": "macOS版をダウンロード",
-    "quickstart.requires": "macOS 15以上 · ユニバーサルバイナリ",
-    "quickstart.footer": "macOS、Windows、Linuxに対応。ワンライナーでNode.jsと必要なものをすべてインストール。",
+    "download.title": "OpenClaw をダウンロード",
+    "download.desc": "あなたのプラットフォーム向けデスクトップアプリ。無料、オープンソース。",
+    "download.downloadFor": "ダウンロード",
+    "download.requirements": "macOS 13+ · Windows 10+ · Linux は CLI で利用可能",
 
     "features.title": "機能紹介",
     "features.runs.title": "あなたのマシンで動作",
