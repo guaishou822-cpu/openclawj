@@ -59,10 +59,7 @@ const DownloadSection = () => {
                     whileTap={{ scale: 0.97 }}
                   >
                     {appleIcon}
-                    <div className="text-left">
-                      <div className="font-semibold text-sm">Apple Silicon</div>
-                      <div className="text-xs text-muted-foreground">M1, M2, M3, M4</div>
-                    </div>
+                    <span className="font-semibold text-sm">Mac Apple芯片</span>
                   </motion.a>
                   <motion.a
                     href="https://github.com/openclaw/openclaw/releases/latest/download/OpenClaw-macOS-x64.dmg"
@@ -71,10 +68,7 @@ const DownloadSection = () => {
                     whileTap={{ scale: 0.97 }}
                   >
                     {appleIcon}
-                    <div className="text-left">
-                      <div className="font-semibold text-sm">Intel</div>
-                      <div className="text-xs text-muted-foreground">x86_64</div>
-                    </div>
+                    <span className="font-semibold text-sm">Mac Intel芯片</span>
                   </motion.a>
                 </div>
               </motion.div>
