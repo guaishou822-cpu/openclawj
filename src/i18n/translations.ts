@@ -138,6 +138,8 @@ export const translations: Record<Locale, Record<string, string>> = {
     "download.title": "OpenClaw をダウンロード",
     "download.desc": "あなたのプラットフォーム向けデスクトップアプリ。無料、オープンソース。",
     "download.downloadFor": "ダウンロード",
+    "download.macApple": "Mac Appleシリコン",
+    "download.macIntel": "Mac Intel",
     "download.requirements": "macOS 13+ · Windows 10+ · Linux は CLI で利用可能",
 
     "features.title": "機能紹介",
