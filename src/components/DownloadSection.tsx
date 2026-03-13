@@ -58,7 +58,7 @@ const DownloadSection = () => {
                     whileTap={{ scale: 0.97 }}
                   >
                     {appleIcon}
-                    <span className="font-semibold text-sm">Mac Apple芯片</span>
+                    <span className="font-semibold text-sm">{t("download.macApple")}</span>
                   </motion.a>
                   <motion.a
                     href="https://github.com/openclaw/openclaw/releases/latest/download/OpenClaw-macOS-x64.dmg"
@@ -67,7 +67,7 @@ const DownloadSection = () => {
                     whileTap={{ scale: 0.97 }}
                   >
                     {appleIcon}
-                    <span className="font-semibold text-sm">Mac Intel芯片</span>
+                    <span className="font-semibold text-sm">{t("download.macIntel")}</span>
                   </motion.a>
                 </div>
               </motion.div>

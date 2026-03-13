@@ -19,6 +19,8 @@ export const translations: Record<Locale, Record<string, string>> = {
     "download.title": "Download OpenClaw",
     "download.desc": "Get the desktop app for your platform. Free, open source, always.",
     "download.downloadFor": "Download for",
+    "download.macApple": "Mac Apple Silicon",
+    "download.macIntel": "Mac Intel",
     "download.requirements": "macOS 13+ · Windows 10+ · Also available on Linux via CLI",
 
     // Features
