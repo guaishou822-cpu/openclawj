@@ -19,6 +19,8 @@ export const translations: Record<Locale, Record<string, string>> = {
     "download.title": "Download OpenClaw",
     "download.desc": "Get the desktop app for your platform. Free, open source, always.",
     "download.downloadFor": "Download for",
+    "download.macApple": "Mac Apple Silicon",
+    "download.macIntel": "Mac Intel",
     "download.requirements": "macOS 13+ · Windows 10+ · Also available on Linux via CLI",
 
     // Features
@@ -80,6 +82,8 @@ export const translations: Record<Locale, Record<string, string>> = {
     "download.title": "下载 OpenClaw",
     "download.desc": "获取适用于你平台的桌面应用。免费、开源、始终如此。",
     "download.downloadFor": "下载",
+    "download.macApple": "Mac Apple芯片",
+    "download.macIntel": "Mac Intel芯片",
     "download.requirements": "macOS 13+ · Windows 10+ · Linux 可通过 CLI 安装",
 
     "features.title": "功能介绍",
@@ -134,6 +138,8 @@ export const translations: Record<Locale, Record<string, string>> = {
     "download.title": "OpenClaw をダウンロード",
     "download.desc": "あなたのプラットフォーム向けデスクトップアプリ。無料、オープンソース。",
     "download.downloadFor": "ダウンロード",
+    "download.macApple": "Mac Appleシリコン",
+    "download.macIntel": "Mac Intel",
     "download.requirements": "macOS 13+ · Windows 10+ · Linux は CLI で利用可能",
 
     "features.title": "機能紹介",
